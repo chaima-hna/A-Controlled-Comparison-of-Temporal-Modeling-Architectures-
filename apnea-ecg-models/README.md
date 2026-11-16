@@ -89,24 +89,7 @@ Full table with confidence intervals: [`results/table2_segment_metrics.csv`](res
 The raw data are **not** included in this repository. Download Apnea-ECG from PhysioNet:
 <https://physionet.org/content/apnea-ecg/1.0.0/>
 
-## 6. Repository structure
-
-Adapt the file names to match your own code.
-
-```
-.
-├── README.md
-├── LICENSE
-├── requirements_keras.txt      # Transformer, LSTM, GRU, BiLSTM, BiGRU
-├── requirements_mamba.txt      # PyTorch 2.9.0 + mamba-ssm
-├── configs/                    # training hyperparameters
-├── src/                        # preprocessing, models, training, evaluation, Integrated Gradients
-├── notebooks/                  # Kaggle notebooks
-├── results/
-│   └── table2_segment_metrics.csv
-└── weights/                    # trained weights (or link to a Release)
-```
-
+ 
 ## 7. Citation
 
 To be added after publication.
