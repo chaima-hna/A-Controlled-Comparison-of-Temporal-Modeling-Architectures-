@@ -59,7 +59,7 @@ An **Integrated Gradients** analysis is also done to see which input time steps 
 | CNN+BiGRU | ~168K | 90.50 | 89.31 | 91.25 | 87.81 | 96.70 | 0.47 |
 | CNN+BiLSTM | ~208K | 90.65 | 85.99 | 93.54 | 87.57 | 96.59 | 0.54 |
 
-Full table with confidence intervals: [`results/table2_segment_metrics.csv`](results/table2_segment_metrics.csv)
+ 
 
 ### Record level (CNN+GRU, 35 test recordings)
 
