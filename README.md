@@ -76,7 +76,6 @@ Full table with confidence intervals: [`results/table2_segment_metrics.csv`](res
 - Integrated Gradients showed moderately concentrated attributions and only weak alignment with local changes in the signal.
 
 ## 4. Limitations
-
 - One public benchmark only (70 recordings), no external validation.
 - One training seed, so training variability is not measured.
 - Validation F1 (0.944-0.950) is higher than test F1 (0.874-0.882). Overlapping windows may have been shared between the training and validation sets, so the split should be checked and repeated by recording.
