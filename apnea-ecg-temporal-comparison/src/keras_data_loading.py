@@ -24,8 +24,21 @@ def load_data():
         x.append([rri_interp, ampl_interp])
 
     num = list(range(len(x)))
-    trainlist, vallist, y_tr, y_vl = train_test_split(
-        num, y_train, test_size=0.3, random_state=42, stratify=y_train)
+    if os.environ.get("APNEA_VAL_SPLIT", "segment") == "recording":
+        # Robustness check: whole recordings are held out for validation, so no
+        # overlapping window is shared between training and validation.
+        # c05 and c06 come from the same original recording and are kept together.
+        from sklearn.model_selection import GroupShuffleSplit
+        groups = np.array(["c05" if g == "c06" else g for g in groups_train])
+        trainlist, vallist = next(GroupShuffleSplit(
+            n_splits=1, test_size=0.3, random_state=42).split(num, y_train, groups))
+        y_all = np.array(y_train)
+        y_tr, y_vl = y_all[trainlist], y_all[vallist]
+        print("Validation recordings:", sorted({str(g) for g in np.array(groups_train)[vallist]}))
+    else:
+        # Protocol of the paper: random 70/30 split of segments, stratified by class.
+        trainlist, vallist, y_tr, y_vl = train_test_split(
+            num, y_train, test_size=0.3, random_state=42, stratify=y_train)
 
     x_train, x_val = [], []
     for i in trainlist: x_train.append(x[i])
