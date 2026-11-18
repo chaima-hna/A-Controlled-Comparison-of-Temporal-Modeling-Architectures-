@@ -1,0 +1,43 @@
+
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata below."
+
+title: "Code for: A Controlled Comparison of Temporal Modeling Architectures for ECG-Based Obstructive Sleep Apnea Detection with Integrated Gradients Analysis"
+
+type: software
+version: 1.0.0
+
+authors:
+  - family-names: "Hannachi"
+    given-names: "Chaima"
+  - family-names: "Kouah"
+    given-names: "Sofia"
+  - family-names: "Ammi"
+    given-names: "Meryem"
+  - family-names: "Cheikhrouhou"
+    given-names: "Omar"
+  - family-names: "Guizani"
+    given-names: "Sghaier"
+  - family-names: "Hamam"
+    given-names: "Habib"
+
+abstract: >
+  Source code accompanying a controlled comparison of six temporal
+  modeling architectures for ECG-based obstructive sleep apnea detection.
+  The software implements a dual-branch convolutional framework with
+  Efficient Channel Attention and six temporal modeling variants:
+  Transformer, Mamba, GRU, LSTM, BiGRU, and BiLSTM.
+  It also includes training configurations, model evaluation,
+  and Integrated Gradients explainability analysis.
+
+keywords:
+  - obstructive sleep apnea
+  - ECG
+  - deep learning
+  - Transformer
+  - Mamba
+  - GRU
+  - LSTM
+  - Integrated Gradients
+  - explainable artificial intelligence
+  - PhysioNet Apnea-ECG
