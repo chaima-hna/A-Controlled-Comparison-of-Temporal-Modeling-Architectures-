@@ -37,7 +37,7 @@ An **Integrated Gradients** analysis is also done to see which input time steps 
    - Class-weighted focal loss (gamma = 2.0).
    - MixUp (50% within-class, 50% between-class, alpha = 0.2).
    - Adam, warm-up (5 epochs) + cosine learning-rate decay, 120 epochs, batch size 128.
-   - Gradient clipping (max norm 1.0), random seed 42.
+   - Gradient clipping applied only to the Mamba model.
    - Best checkpoint chosen by validation F1-score.
    - Test-time augmentation (10 noisy passes) and decision threshold chosen on the validation set.
 5. **Evaluation.**
