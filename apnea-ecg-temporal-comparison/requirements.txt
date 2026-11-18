@@ -1,0 +1,18 @@
+# Preprocessing, Keras models, evaluation, Integrated Gradients
+# Replace these ranges with the exact versions from your run.
+tensorflow>=2.16
+keras>=3.0
+numpy
+scipy
+pandas
+scikit-learn
+matplotlib
+wfdb
+biosppy
+tqdm
+
+# PyTorch Mamba model only (train_cnn_mamba.py). Needs a CUDA GPU.
+# Install PyTorch first (https://pytorch.org), then uncomment the next two lines:
+# torch
+# mamba-ssm
+# causal-conv1d

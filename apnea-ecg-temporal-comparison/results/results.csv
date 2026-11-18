@@ -1,0 +1,114 @@
+﻿result_group,model_or_condition,metric,value,unit,95_percent_CI,notes
+Segment-level comparison,CNN+Transformer,ACC,90.64,%,90.17–91.00,"95% bootstrap CI; 1,000 iterations"
+Segment-level comparison,CNN+Transformer,SN,87.72,%,86.93–88.59,"95% bootstrap CI; 1,000 iterations"
+Segment-level comparison,CNN+Transformer,SP,92.45,%,91.85–92.81,"95% bootstrap CI; 1,000 iterations"
+Segment-level comparison,CNN+Transformer,F1,87.77,%,87.13–88.31,"95% bootstrap CI; 1,000 iterations"
+Segment-level comparison,CNN+Transformer,AUC,96.54,%,96.30–96.79,"95% bootstrap CI; 1,000 iterations"
+Segment-level comparison,CNN+Transformer,threshold,0.5,,,Validation-selected decision threshold
+Segment-level comparison,CNN+Mamba,ACC,90.39,%,89.91–90.82,"95% bootstrap CI; 1,000 iterations"
+Segment-level comparison,CNN+Mamba,SN,86.59,%,86.00–87.66,"95% bootstrap CI; 1,000 iterations"
+Segment-level comparison,CNN+Mamba,SP,92.75,%,92.08–93.08,"95% bootstrap CI; 1,000 iterations"
+Segment-level comparison,CNN+Mamba,F1,87.35,%,86.77–87.96,"95% bootstrap CI; 1,000 iterations"
+Segment-level comparison,CNN+Mamba,AUC,96.26,%,96.01–96.51,"95% bootstrap CI; 1,000 iterations"
+Segment-level comparison,CNN+Mamba,threshold,0.54,,,Validation-selected decision threshold
+Segment-level comparison,CNN+LSTM,ACC,90.82,%,90.30–91.22,"95% bootstrap CI; 1,000 iterations"
+Segment-level comparison,CNN+LSTM,SN,85.1,%,84.28–86.09,"95% bootstrap CI; 1,000 iterations"
+Segment-level comparison,CNN+LSTM,SP,94.37,%,93.78–94.68,"95% bootstrap CI; 1,000 iterations"
+Segment-level comparison,CNN+LSTM,F1,87.65,%,86.98–88.22,"95% bootstrap CI; 1,000 iterations"
+Segment-level comparison,CNN+LSTM,AUC,96.57,%,96.34–96.83,"95% bootstrap CI; 1,000 iterations"
+Segment-level comparison,CNN+LSTM,threshold,0.6,,,Validation-selected decision threshold
+Segment-level comparison,CNN+GRU,ACC,90.99,%,90.56–91.43,"95% bootstrap CI; 1,000 iterations"
+Segment-level comparison,CNN+GRU,SN,87.89,%,87.10–88.75,"95% bootstrap CI; 1,000 iterations"
+Segment-level comparison,CNN+GRU,SP,92.92,%,92.36–93.38,"95% bootstrap CI; 1,000 iterations"
+Segment-level comparison,CNN+GRU,F1,88.2,%,87.63–88.84,"95% bootstrap CI; 1,000 iterations"
+Segment-level comparison,CNN+GRU,AUC,96.81,%,96.58–97.06,"95% bootstrap CI; 1,000 iterations"
+Segment-level comparison,CNN+GRU,threshold,0.5,,,Validation-selected decision threshold
+Segment-level comparison,CNN+BiGRU,ACC,90.5,%,90.07–90.92,"95% bootstrap CI; 1,000 iterations"
+Segment-level comparison,CNN+BiGRU,SN,89.31,%,88.71–90.21,"95% bootstrap CI; 1,000 iterations"
+Segment-level comparison,CNN+BiGRU,SP,91.25,%,90.60–91.68,"95% bootstrap CI; 1,000 iterations"
+Segment-level comparison,CNN+BiGRU,F1,87.81,%,87.27–88.39,"95% bootstrap CI; 1,000 iterations"
+Segment-level comparison,CNN+BiGRU,AUC,96.7,%,96.48–96.93,"95% bootstrap CI; 1,000 iterations"
+Segment-level comparison,CNN+BiGRU,threshold,0.47,,,Validation-selected decision threshold
+Segment-level comparison,CNN+BiLSTM,ACC,90.65,%,90.16–91.06,"95% bootstrap CI; 1,000 iterations"
+Segment-level comparison,CNN+BiLSTM,SN,85.99,%,85.24–86.96,"95% bootstrap CI; 1,000 iterations"
+Segment-level comparison,CNN+BiLSTM,SP,93.54,%,92.96–93.91,"95% bootstrap CI; 1,000 iterations"
+Segment-level comparison,CNN+BiLSTM,F1,87.57,%,86.89–88.16,"95% bootstrap CI; 1,000 iterations"
+Segment-level comparison,CNN+BiLSTM,AUC,96.59,%,96.35–96.84,"95% bootstrap CI; 1,000 iterations"
+Segment-level comparison,CNN+BiLSTM,threshold,0.54,,,Validation-selected decision threshold
+Model complexity,CNN+Transformer,parameter_count,104000.0,parameters,,Approximate parameter count reported in the article
+Model complexity,CNN+Mamba,parameter_count,102000.0,parameters,,Approximate parameter count reported in the article
+Model complexity,CNN+LSTM,parameter_count,101000.0,parameters,,Approximate parameter count reported in the article
+Model complexity,CNN+GRU,parameter_count,84725.0,parameters,,Exact parameter count reported in the article
+Model complexity,CNN+BiGRU,parameter_count,168000.0,parameters,,Approximate parameter count reported in the article
+Model complexity,CNN+BiLSTM,parameter_count,208000.0,parameters,,Approximate parameter count reported in the article
+Ablation study,M1,ACC,87.19,%,,"Cross-entropy loss, threshold 0.5, without test-time augmentation"
+Ablation study,M1,SN,84.24,%,,"Cross-entropy loss, threshold 0.5, without test-time augmentation"
+Ablation study,M1,SP,89.03,%,,"Cross-entropy loss, threshold 0.5, without test-time augmentation"
+Ablation study,M1,F1,83.44,%,,"Cross-entropy loss, threshold 0.5, without test-time augmentation"
+Ablation study,M2,ACC,87.86,%,,"Cross-entropy loss, threshold 0.5, without test-time augmentation"
+Ablation study,M2,SN,81.23,%,,"Cross-entropy loss, threshold 0.5, without test-time augmentation"
+Ablation study,M2,SP,91.98,%,,"Cross-entropy loss, threshold 0.5, without test-time augmentation"
+Ablation study,M2,F1,83.68,%,,"Cross-entropy loss, threshold 0.5, without test-time augmentation"
+Ablation study,M3,ACC,89.45,%,,"Cross-entropy loss, threshold 0.5, without test-time augmentation"
+Ablation study,M3,SN,84.89,%,,"Cross-entropy loss, threshold 0.5, without test-time augmentation"
+Ablation study,M3,SP,92.28,%,,"Cross-entropy loss, threshold 0.5, without test-time augmentation"
+Ablation study,M3,F1,86.04,%,,"Cross-entropy loss, threshold 0.5, without test-time augmentation"
+Ablation study,M4,ACC,89.81,%,,"Cross-entropy loss, threshold 0.5, without test-time augmentation"
+Ablation study,M4,SN,85.65,%,,"Cross-entropy loss, threshold 0.5, without test-time augmentation"
+Ablation study,M4,SP,92.39,%,,"Cross-entropy loss, threshold 0.5, without test-time augmentation"
+Ablation study,M4,F1,86.56,%,,"Cross-entropy loss, threshold 0.5, without test-time augmentation"
+Ablation study,M5,ACC,90.48,%,,"Cross-entropy loss, threshold 0.5, without test-time augmentation"
+Ablation study,M5,SN,88.57,%,,"Cross-entropy loss, threshold 0.5, without test-time augmentation"
+Ablation study,M5,SP,91.67,%,,"Cross-entropy loss, threshold 0.5, without test-time augmentation"
+Ablation study,M5,F1,87.7,%,,"Cross-entropy loss, threshold 0.5, without test-time augmentation"
+Ablation study,Proposed,ACC,90.99,%,,"Threshold 0.5 and no TTA for M1–M5; proposed model uses focal loss, TTA and validation-selected threshold"
+Ablation study,Proposed,SN,87.89,%,,"Threshold 0.5 and no TTA for M1–M5; proposed model uses focal loss, TTA and validation-selected threshold"
+Ablation study,Proposed,SP,92.92,%,,"Threshold 0.5 and no TTA for M1–M5; proposed model uses focal loss, TTA and validation-selected threshold"
+Ablation study,Proposed,F1,88.2,%,,"Threshold 0.5 and no TTA for M1–M5; proposed model uses focal loss, TTA and validation-selected threshold"
+Record-level evaluation,CNN+GRU,ACC,97.14,%,,Test set of 35 recordings
+Record-level evaluation,CNN+GRU,SN,100.0,%,,Test set of 35 recordings
+Record-level evaluation,CNN+GRU,SP,91.67,%,,Test set of 35 recordings
+Record-level evaluation,CNN+GRU,MAE_apnea_labeled_minutes_per_hour,2.82,minutes/hour,,Test set of 35 recordings
+Record-level evaluation,CNN+GRU,true_positives,23.0,recordings,,Test set of 35 recordings
+Record-level evaluation,CNN+GRU,true_negatives,11.0,recordings,,Test set of 35 recordings
+Record-level evaluation,CNN+GRU,false_positives,1.0,recordings,,Test set of 35 recordings
+Record-level evaluation,CNN+GRU,false_negatives,0.0,recordings,,Test set of 35 recordings
+Record-level evaluation,CNN+GRU,correctly_classified_recordings,34.0,of 35,,Test set of 35 recordings
+Integrated Gradients,CNN+GRU,completeness_relative_error,1.27,%,,500 randomly selected test segments
+Integrated Gradients,CNN+GRU,Gini_RRI,0.5071,,,Attribution concentration
+Integrated Gradients,CNN+GRU,Gini_R_amplitude,0.5434,,,Attribution concentration
+Integrated Gradients,CNN+GRU,mean_abs_attribution_apnea_RRI,0.0709,,,Apnea segments
+Integrated Gradients,CNN+GRU,mean_abs_attribution_apnea_R_amplitude,0.0709,,,Apnea segments
+Integrated Gradients,CNN+GRU,mean_abs_attribution_normal_RRI,0.0757,,,Normal segments
+Integrated Gradients,CNN+GRU,mean_abs_attribution_normal_R_amplitude,0.0768,,,Normal segments
+Integrated Gradients,CNN+GRU,Pearson_correlation_RRI,0.029,,,Attribution magnitude vs local signal variation
+Integrated Gradients,CNN+GRU,Pearson_correlation_R_amplitude,0.034,,,Attribution magnitude vs local signal variation
+Integrated Gradients,CNN+GRU,global_attribution_share_RRI,49.8,%,,Global attribution share
+Integrated Gradients,CNN+GRU,global_attribution_share_R_amplitude,50.2,%,,Global attribution share
+Integrated Gradients,CNN+GRU,paired_t_statistic,-3.06,,,Segment-level paired t-test
+Integrated Gradients,CNN+GRU,paired_t_test_p_value,0.0023,,,Nominal p-value; overlapping windows affect independence
+Channel replacement analysis,CNN+GRU,accuracy_with_RRI_replaced_by_segment_mean,84.64,%,,RRI channel replacement
+Channel replacement analysis,CNN+GRU,accuracy_with_R_amplitude_replaced_by_segment_mean,84.6,%,,R-amplitude channel replacement
+Channel replacement analysis,CNN+GRU,sensitivity_RRI_replaced,74.99,%,,Compared with original sensitivity of 87.97%
+Channel replacement analysis,CNN+GRU,sensitivity_R_amplitude_replaced,67.38,%,,Compared with original sensitivity of 87.97%
+Channel replacement analysis,CNN+GRU,specificity_R_amplitude_replaced,95.28,%,,R-amplitude channel replacement
+IG deletion test,5% deletion,apnea_IG,2.023,,,"Direction-adjusted deletion score; 15,418 correctly classified test segments"
+IG deletion test,5% deletion,apnea_random,0.687,,,"Direction-adjusted deletion score; 15,418 correctly classified test segments"
+IG deletion test,5% deletion,normal_IG,-0.218,,,"Direction-adjusted deletion score; 15,418 correctly classified test segments"
+IG deletion test,5% deletion,normal_random,-0.119,,,"Direction-adjusted deletion score; 15,418 correctly classified test segments"
+IG deletion test,10% deletion,apnea_IG,2.702,,,"Direction-adjusted deletion score; 15,418 correctly classified test segments"
+IG deletion test,10% deletion,apnea_random,1.266,,,"Direction-adjusted deletion score; 15,418 correctly classified test segments"
+IG deletion test,10% deletion,normal_IG,-0.139,,,"Direction-adjusted deletion score; 15,418 correctly classified test segments"
+IG deletion test,10% deletion,normal_random,-0.161,,,"Direction-adjusted deletion score; 15,418 correctly classified test segments"
+IG deletion test,20% deletion,apnea_IG,3.745,,,"Direction-adjusted deletion score; 15,418 correctly classified test segments"
+IG deletion test,20% deletion,apnea_random,2.25,,,"Direction-adjusted deletion score; 15,418 correctly classified test segments"
+IG deletion test,20% deletion,normal_IG,-0.066,,,"Direction-adjusted deletion score; 15,418 correctly classified test segments"
+IG deletion test,20% deletion,normal_random,-0.124,,,"Direction-adjusted deletion score; 15,418 correctly classified test segments"
+IG deletion test,30% deletion,apnea_IG,4.682,,,"Direction-adjusted deletion score; 15,418 correctly classified test segments"
+IG deletion test,30% deletion,apnea_random,3.136,,,"Direction-adjusted deletion score; 15,418 correctly classified test segments"
+IG deletion test,30% deletion,normal_IG,-0.028,,,"Direction-adjusted deletion score; 15,418 correctly classified test segments"
+IG deletion test,30% deletion,normal_random,0.044,,,"Direction-adjusted deletion score; 15,418 correctly classified test segments"
+IG deletion statistical test,5% deletion,Wilcoxon_signed_rank_p_value,1.454e-05,,,IG-guided pooled score higher than random in 25/35 recordings
+IG deletion statistical test,10% deletion,Wilcoxon_signed_rank_p_value,2.168e-07,,,IG-guided pooled score higher than random in 30/35 recordings
+IG deletion statistical test,20% deletion,Wilcoxon_signed_rank_p_value,6.222e-08,,,IG-guided pooled score higher than random in 30/35 recordings
+IG deletion statistical test,30% deletion,Wilcoxon_signed_rank_p_value,8.715e-06,,,IG-guided pooled score higher than random in 26/35 recordings
