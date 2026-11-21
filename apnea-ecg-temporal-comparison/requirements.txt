@@ -1,0 +1,27 @@
+# Environment used for the reported results: Python 3.13 (Kaggle)
+
+# Keras models, evaluation, Integrated Gradients
+tensorflow==2.21.0
+keras==3.13.2
+numpy==2.1.3
+scipy==1.16.3
+pandas==2.3.3
+scikit-learn==1.6.1
+matplotlib==3.10.0
+tqdm==4.67.3
+
+# Preprocessing only (preprocess_apnea_ecg.py).
+# Versions not recorded: run `pip show wfdb biosppy` in the session where you
+# ran preprocessing, then pin them here (e.g. wfdb==x.y.z).
+wfdb
+biosppy
+
+# PyTorch Mamba model only (train_cnn_mamba.py). Needs a CUDA GPU.
+# Install these separately, not with `pip install -r`:
+#   pip install torch==2.9.0
+#   pip install causal-conv1d --no-build-isolation
+#   pip install mamba-ssm --no-build-isolation
+# Pin the exact mamba-ssm / causal-conv1d versions below once you have them.
+# torch==2.9.0
+# mamba-ssm
+# causal-conv1d
